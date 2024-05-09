@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        
+        m_PlayerCamera.transform.SetParent(FindObjectOfType<GameManager>().transform);
     }
 
     private void Update()
